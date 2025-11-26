@@ -13,14 +13,35 @@
   --shadow-lg: 0 10px 25px rgba(220, 38, 38, 0.15);
 }
 
+.FrontPage.christmas.dark {
+  --primary-color: #fbbf24;
+  --secondary-color: #fcd34d;
+  --accent-color: #fef08a;
+  --text-dark: #f3f4f6;
+  --text-light: #999;
+  --bg-light: #1a1a1a;
+  --bg-white: #2d1515;
+  --border-color: #402020;
+  --shadow: 0 4px 6px rgba(220, 38, 38, 0.3);
+  --shadow-lg: 0 10px 25px rgba(220, 38, 38, 0.2);
+}
+
 .FrontPage.christmas {
   background: linear-gradient(180deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.FrontPage.christmas.dark {
+  background: linear-gradient(180deg, #1a1a1a 0%, #2d1515 100%);
 }
 
 .FrontPage.christmas .hero {
   background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
   position: relative;
   overflow: hidden;
+}
+
+.FrontPage.christmas.dark .hero {
+  background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%);
 }
 
 .FrontPage.christmas .profile-pic {
@@ -96,6 +117,71 @@
 
 .FrontPage.christmas .footer {
   background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+}
+
+.FrontPage.christmas.dark .profile-pic {
+  border-color: #2d1515;
+  box-shadow: 0 10px 25px rgba(251, 191, 36, 0.2);
+}
+
+.FrontPage.christmas.dark .btn-primary {
+  background: #dc2626;
+  color: #fbbf24;
+}
+
+.FrontPage.christmas.dark .btn-primary:hover {
+  background: #991b1b;
+}
+
+.FrontPage.christmas.dark .skill-item li::before {
+  color: #fbbf24;
+}
+
+.FrontPage.christmas.dark .project-card {
+  background: rgba(45, 21, 21, 0.95);
+  border: 2px solid #402020;
+}
+
+.FrontPage.christmas.dark .project-card:hover {
+  border-color: #fbbf24;
+}
+
+.FrontPage.christmas.dark .project-tech span {
+  background: #402020;
+  color: #fbbf24;
+}
+
+.FrontPage.christmas.dark .contact-card {
+  background: rgba(45, 21, 21, 0.95);
+  border: 2px solid #402020;
+}
+
+.FrontPage.christmas.dark .contact-card:hover {
+  border-color: #fbbf24;
+}
+
+.FrontPage.christmas.dark .timeline::before {
+  background: repeating-linear-gradient(
+    45deg,
+    #fbbf24,
+    #fbbf24 10px,
+    #2d1515 10px,
+    #2d1515 20px
+  );
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
+.FrontPage.christmas.dark .timeline-item::before {
+  background: linear-gradient(135deg, #fbbf24 0%, #fcd34d 100%);
+  border-color: #2d1515;
+  width: 24px;
+  height: 24px;
+  left: -12px;
+  box-shadow: 0 0 12px rgba(251, 191, 36, 0.5), inset 0 0 5px rgba(45, 21, 21, 0.5);
+}
+
+.FrontPage.christmas.dark .footer {
+  background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%);
 }
 
 .FrontPage.christmas .hero::after {
