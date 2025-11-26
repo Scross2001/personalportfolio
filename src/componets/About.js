@@ -6,11 +6,21 @@ export default function About() {
       <div className="container">
         <h2>About Me</h2>
         <p>
-          I'm a passionate developer with expertise in React, Node.js, and full-stack web development.
-          I love building beautiful, functional applications that solve real-world problems.
-          When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.
+          I'm a Computer Science graduate from Plymouth State University with a minor in Cyber Security. I'm passionate about full-stack web development and building functional applications that solve real-world problems. I have hands-on experience in both frontend and backend development, with a strong foundation in multiple programming languages and frameworks.
         </p>
         <div className="skills">
+          <div className="skill-item">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C#</li>
+              <li>C++</li>
+              <li>SQL</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </div>
           <div className="skill-item">
             <h3>Frontend</h3>
             <ul>
@@ -20,19 +30,12 @@ export default function About() {
             </ul>
           </div>
           <div className="skill-item">
-            <h3>Backend</h3>
+            <h3>Backend & Tools</h3>
             <ul>
               <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-            </ul>
-          </div>
-          <div className="skill-item">
-            <h3>Tools</h3>
-            <ul>
-              <li>Git</li>
-              <li>Docker</li>
-              <li>GitHub</li>
+              <li>Azure DevOps</li>
+              <li>Git/GitHub</li>
+              <li>MariaDB</li>
             </ul>
           </div>
         </div>

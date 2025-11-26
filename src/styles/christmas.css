@@ -75,12 +75,23 @@
 }
 
 .FrontPage.christmas .timeline::before {
-  background: linear-gradient(180deg, #dc2626, #991b1b);
+  background: repeating-linear-gradient(
+    45deg,
+    #dc2626,
+    #dc2626 10px,
+    #fef2f2 10px,
+    #fef2f2 20px
+  );
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.3);
 }
 
 .FrontPage.christmas .timeline-item::before {
-  background: #dc2626;
+  background: linear-gradient(135deg, #dc2626 0%, #f5222d 100%);
   border-color: #fefce8;
+  width: 24px;
+  height: 24px;
+  left: -12px;
+  box-shadow: 0 0 12px rgba(220, 38, 38, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
 .FrontPage.christmas .footer {
@@ -331,12 +342,23 @@
 }
 
 .FrontPage.christmas .timeline::before {
-  background: linear-gradient(180deg, #dc2626, #991b1b);
+  background: repeating-linear-gradient(
+    45deg,
+    #dc2626,
+    #dc2626 10px,
+    #fef2f2 10px,
+    #fef2f2 20px
+  );
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.3);
 }
 
 .FrontPage.christmas .timeline-item::before {
-  background: #dc2626;
+  background: linear-gradient(135deg, #dc2626 0%, #f5222d 100%);
   border-color: #fefce8;
+  width: 24px;
+  height: 24px;
+  left: -12px;
+  box-shadow: 0 0 12px rgba(220, 38, 38, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
 .FrontPage.christmas .footer {

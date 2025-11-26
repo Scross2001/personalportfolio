@@ -13,15 +13,16 @@ export default function Projects() {
                 background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
               }}
             ></div>
-            <h3>Project One</h3>
-            <p>A React-based task management app with real-time updates and user authentication.</p>
+            <h3>Music Store Website</h3>
+            <p>A fully functional e-commerce website for music products with database management and user shopping experience.</p>
             <div className="project-tech">
-              <span>React</span>
-              <span>Firebase</span>
-              <span>Tailwind</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>MariaDB</span>
             </div>
             <a
-              href="https://github.com"
+              href="https://github.com/Scross2001"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -36,15 +37,15 @@ export default function Projects() {
                 background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
               }}
             ></div>
-            <h3>Project Two</h3>
-            <p>Full-stack e-commerce platform with payment integration and inventory management.</p>
+            <h3>Discord Bot</h3>
+            <p>A chat bot built using Discord's API with message analysis for contextually relevant responses and enhanced user engagement.</p>
             <div className="project-tech">
-              <span>Node.js</span>
-              <span>MongoDB</span>
-              <span>Stripe</span>
+              <span>Python</span>
+              <span>Discord API</span>
+              <span>Message Analysis</span>
             </div>
             <a
-              href="https://github.com"
+              href="https://github.com/Scross2001"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -59,15 +60,15 @@ export default function Projects() {
                 background: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
               }}
             ></div>
-            <h3>Project Three</h3>
-            <p>Data visualization dashboard with real-time analytics and interactive charts.</p>
+            <h3>Python Chess</h3>
+            <p>A complete chess game implementation from scratch with full game logic, move validation, and user interface.</p>
             <div className="project-tech">
-              <span>React</span>
-              <span>D3.js</span>
-              <span>Express</span>
+              <span>Python</span>
+              <span>Game Logic</span>
+              <span>Algorithms</span>
             </div>
             <a
-              href="https://github.com"
+              href="https://github.com/Scross2001/PythonChess"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
