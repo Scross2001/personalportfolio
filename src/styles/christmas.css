@@ -1,0 +1,344 @@
+/* christmas.css - Christmas Theme for Personal Portfolio */
+
+.FrontPage.christmas {
+  --primary-color: #dc2626;
+  --secondary-color: #991b1b;
+  --accent-color: #fbbf24;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --bg-light: #fef2f2;
+  --bg-white: #fefce8;
+  --border-color: #fee2e2;
+  --shadow: 0 4px 6px rgba(220, 38, 38, 0.1);
+  --shadow-lg: 0 10px 25px rgba(220, 38, 38, 0.15);
+}
+
+.FrontPage.christmas {
+  background: linear-gradient(180deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.FrontPage.christmas .hero {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.FrontPage.christmas .profile-pic {
+  border-color: #fef2f2;
+  box-shadow: 0 10px 25px rgba(153, 27, 27, 0.3);
+}
+
+.FrontPage.christmas .btn-primary {
+  background: #fbbf24;
+  color: #dc2626;
+}
+
+.FrontPage.christmas .btn-primary:hover {
+  background: #fcd34d;
+}
+
+.FrontPage.christmas .skill-item {
+  background: rgba(254, 242, 242, 0.8);
+  border: 2px solid #fee2e2;
+}
+
+.FrontPage.christmas .skill-item:hover {
+  border-color: #dc2626;
+  background: #fefce8;
+}
+
+.FrontPage.christmas .skill-item li::before {
+  color: #dc2626;
+}
+
+.FrontPage.christmas .project-card {
+  background: rgba(254, 242, 242, 0.95);
+  border: 2px solid #fee2e2;
+}
+
+.FrontPage.christmas .project-card:hover {
+  border-color: #dc2626;
+}
+
+.FrontPage.christmas .project-tech span {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.FrontPage.christmas .contact-card {
+  background: rgba(254, 242, 242, 0.95);
+  border: 2px solid #fee2e2;
+}
+
+.FrontPage.christmas .contact-card:hover {
+  border-color: #dc2626;
+}
+
+.FrontPage.christmas .timeline::before {
+  background: linear-gradient(180deg, #dc2626, #991b1b);
+}
+
+.FrontPage.christmas .timeline-item::before {
+  background: #dc2626;
+  border-color: #fefce8;
+}
+
+.FrontPage.christmas .footer {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+}
+
+.FrontPage.christmas .hero::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Create falling snowflakes */
+.FrontPage.christmas .hero::before {
+  background: none;
+  pointer-events: none;
+}
+
+.FrontPage.christmas .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Falling snowflake animation with realistic physics - swinging and rotating */
+@keyframes fall-snow-1 {
+  0% {
+    transform: translateY(-100px) translateX(0) rotate(5deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(25vh) translateX(80px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(50vh) translateX(0) rotate(5deg);
+  }
+  75% {
+    transform: translateY(75vh) translateX(60px) rotate(-3deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(0) rotate(5deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-snow-2 {
+  0% {
+    transform: translateY(-100px) translateX(0) rotate(-5deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(25vh) translateX(-90px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(50vh) translateX(0) rotate(-5deg);
+  }
+  75% {
+    transform: translateY(75vh) translateX(-70px) rotate(4deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(0) rotate(-5deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-snow-3 {
+  0% {
+    transform: translateY(-100px) translateX(0) rotate(3deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(25vh) translateX(70px) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(50vh) translateX(0) rotate(3deg);
+  }
+  75% {
+    transform: translateY(75vh) translateX(75px) rotate(-3deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(0) rotate(3deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-snow-4 {
+  0% {
+    transform: translateY(-100px) translateX(0) rotate(-3deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(25vh) translateX(-75px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(50vh) translateX(0) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(75vh) translateX(-60px) rotate(4deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(0) rotate(-3deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-snow-5 {
+  0% {
+    transform: translateY(-100px) translateX(0) rotate(4deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(25vh) translateX(85px) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(50vh) translateX(0) rotate(4deg);
+  }
+  75% {
+    transform: translateY(75vh) translateX(70px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(0) rotate(4deg);
+    opacity: 0;
+  }
+}
+
+.FrontPage.christmas .hero {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  position: relative;
+}
+
+/* Individual falling snowflakes with staggered timing and different durations */
+.FrontPage.christmas .hero::before {
+  content: '❄️';
+  position: fixed;
+  top: -50px;
+  left: 10%;
+  font-size: 2.5rem;
+  opacity: 0.8;
+  animation: fall-snow-1 8s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Second snowflake - different start time and speed */
+.FrontPage.christmas .hero::after {
+  content: '❄️';
+  position: fixed;
+  top: -50px;
+  left: 20%;
+  font-size: 2.5rem;
+  opacity: 0.8;
+  animation: fall-snow-2 10s linear 2s infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Using pseudo-elements on different sections for more snowflakes */
+.FrontPage.christmas .hero-content::before {
+  content: '❄️';
+  position: fixed;
+  top: -50px;
+  left: 30%;
+  font-size: 2.5rem;
+  opacity: 0.8;
+  animation: fall-snow-3 9s linear 1s infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.FrontPage.christmas .hero-content::after {
+  content: '❄️';
+  position: fixed;
+  top: -50px;
+  left: 40%;
+  font-size: 2.5rem;
+  opacity: 0.8;
+  animation: fall-snow-4 11s linear 3s infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.FrontPage.christmas .hero-content h1::before {
+  content: '❄️';
+  position: fixed;
+  top: -50px;
+  left: 50%;
+  font-size: 2.5rem;
+  opacity: 0.8;
+  animation: fall-snow-5 7s linear 0.5s infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.FrontPage.christmas .profile-pic {
+  border-color: #fef2f2;
+  box-shadow: 0 10px 25px rgba(153, 27, 27, 0.3);
+}
+
+.FrontPage.christmas .btn-primary {
+  background: #fbbf24;
+  color: #dc2626;
+}
+
+.FrontPage.christmas .btn-primary:hover {
+  background: #fcd34d;
+}
+
+.FrontPage.christmas .skill-item {
+  background: rgba(254, 242, 242, 0.8);
+  border: 2px solid #fee2e2;
+}
+
+.FrontPage.christmas .skill-item:hover {
+  border-color: #dc2626;
+  background: #fefce8;
+}
+
+.FrontPage.christmas .skill-item li::before {
+  color: #dc2626;
+}
+
+.FrontPage.christmas .project-card {
+  background: rgba(254, 242, 242, 0.95);
+  border: 2px solid #fee2e2;
+}
+
+.FrontPage.christmas .project-card:hover {
+  border-color: #dc2626;
+}
+
+.FrontPage.christmas .project-tech span {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.FrontPage.christmas .contact-card {
+  background: rgba(254, 242, 242, 0.95);
+  border: 2px solid #fee2e2;
+}
+
+.FrontPage.christmas .contact-card:hover {
+  border-color: #dc2626;
+}
+
+.FrontPage.christmas .timeline::before {
+  background: linear-gradient(180deg, #dc2626, #991b1b);
+}
+
+.FrontPage.christmas .timeline-item::before {
+  background: #dc2626;
+  border-color: #fefce8;
+}
+
+.FrontPage.christmas .footer {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+}
