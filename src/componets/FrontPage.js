@@ -11,10 +11,9 @@ import "../styles/base.css";
 const getSeasonalTheme = () => {
   const month = new Date().getMonth() + 1;
 
-//   if (month === 12) return "christmas";
-//   if ([9, 10, 11].includes(month)) return "fall";
+  if (month === 12) return "christmas";
+  if ([9, 10, 11].includes(month)) return "fall";
 
-//   return "base";
   return "base";
 };
 
@@ -28,6 +27,8 @@ const getColorMode = () => {
 export default function FrontPage() {
   const [theme, setTheme] = useState("base");
   const [colorMode, setColorMode] = useState("light");
+
+  const themes = ["base", "fall", "christmas"];
 
   useEffect(() => {
     const detectedTheme = getSeasonalTheme();
@@ -51,8 +52,28 @@ export default function FrontPage() {
     setColorMode(colorMode === "dark" ? "light" : "dark");
   };
 
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme);
+    import(`../styles/${newTheme}.css`).catch(() => console.warn("Theme not found"));
+  };
+
   return (
     <div className={`FrontPage ${theme} ${colorMode}`}>
+      <div className="theme-selector-bar">
+        <div className="theme-buttons">
+          {themes.map((t) => (
+            <button
+              key={t}
+              className={`theme-btn ${theme === t ? "active" : ""}`}
+              onClick={() => handleThemeChange(t)}
+              title={`Switch to ${t} theme`}
+            >
+              {t.charAt(0).toUpperCase() + t.slice(1).replace("-", " ")}
+            </button>
+          ))}
+        </div>
+      </div>
+
       <button 
         className="theme-toggle"
         onClick={toggleColorMode}
@@ -78,7 +99,7 @@ export default function FrontPage() {
       <Contact />
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
